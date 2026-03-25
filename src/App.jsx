@@ -1,8 +1,6 @@
-import { useState } from 'react'
-import Square from './square'
 
 import './App.css'
-import Board from './board'
+import Board from './components/board'
 
 
 function App() {

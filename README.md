@@ -1,16 +1,54 @@
-# React + Vite
+# Tic Tac Toe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Fuente del tutorial
+Este juego fue creado con base en el siguiente tutorial:
+[Tutorial Tic Tac Toe de React](https://react.dev/learn/tutorial-tic-tac-toe)
 
-Currently, two official plugins are available:
+## Desarrollo
+El proyecto fue desarrollado con React y Vite, aplicando componentes reutilizables para organizar la lógica y la interfaz del juego.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### `App`
+Es el componente principal de la aplicación. Se encarga de renderizar el tablero y de iniciar la experiencia del juego.
 
-## React Compiler
+Espacio para imagen del componente `App`:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![Imagen de App]()
 
-## Expanding the ESLint configuration
+### `Board`
+Es el componente central del juego. Administra el estado de las casillas, controla los turnos de los jugadores, registra los movimientos y determina si existe un ganador.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Espacio para imagen del componente `Board`:
+
+![Imagen de Board]()
+
+### `Square`
+Representa cada casilla del tablero. Recibe el valor de la posición y la función que se ejecuta al hacer clic.
+
+Espacio para imagen del componente `Square`:
+
+![Imagen de Square]()
+
+### `GameInfo`
+Muestra el historial de movimientos realizados durante la partida.
+
+Espacio para imagen del componente `GameInfo`:
+
+![Imagen de GameInfo]()
+
+### `calculateWinner`
+Función auxiliar usada para evaluar las combinaciones posibles y determinar si algún jugador ganó la partida.
+
+## Cómo correr
+1. Instalar dependencias:
+	```bash
+	npm install
+	```
+
+2. Ejecutar el proyecto en modo desarrollo:
+	```bash
+	npm run dev
+	```
+
+3. Abrir la URL que aparece en la terminal.
+
+## Funcionalidad
